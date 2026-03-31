@@ -1,7 +1,3 @@
-<<<<<<< Updated upstream
-=======
-// ignore_for_file: public_member_api_docs, sort_constructors_first
->>>>>>> Stashed changes
 import 'dart:convert';
 
 class Produit {
@@ -11,11 +7,7 @@ class Produit {
   double price;
   String imageUrl;
   String brand;
-<<<<<<< Updated upstream
   String produitCategoryName;
-=======
-  String  produitCategoryName;
->>>>>>> Stashed changes
   int quantity;
   Produit({
     required this.id,
@@ -51,7 +43,6 @@ class Produit {
   }
 
   Map<String, dynamic> toMap() {
-<<<<<<< Updated upstream
     final result = <String, dynamic>{};
   
     result.addAll({'id': id});
@@ -64,23 +55,10 @@ class Produit {
     result.addAll({'quantity': quantity});
   
     return result;
-=======
-    return <String, dynamic>{
-      'id': id,
-      'title': title,
-      'description': description,
-      'price': price,
-      'imageUrl': imageUrl,
-      'brand': brand,
-      'produitCategoryName': produitCategoryName,
-      'quantity': quantity,
-    };
->>>>>>> Stashed changes
   }
 
   factory Produit.fromMap(Map<String, dynamic> map) {
     return Produit(
-<<<<<<< Updated upstream
       id: map['id'] ?? '',
       title: map['title'] ?? '',
       description: map['description'] ?? '',
@@ -89,26 +67,12 @@ class Produit {
       brand: map['brand'] ?? '',
       produitCategoryName: map['produitCategoryName'] ?? '',
       quantity: map['quantity']?.toInt() ?? 0,
-=======
-      id: map['id'] as String,
-      title: map['title'] as String,
-      description: map['description'] as String,
-      price: map['price'] as double,
-      imageUrl: map['imageUrl'] as String,
-      brand: map['brand'] as String,
-      produitCategoryName: map['produitCategoryName'] as String,
-      quantity: map['quantity'] as int,
->>>>>>> Stashed changes
     );
   }
 
   String toJson() => json.encode(toMap());
 
-<<<<<<< Updated upstream
   factory Produit.fromJson(String source) => Produit.fromMap(json.decode(source));
-=======
-  factory Produit.fromJson(String source) => Produit.fromMap(json.decode(source) as Map<String, dynamic>);
->>>>>>> Stashed changes
 
   @override
   String toString() {
@@ -116,17 +80,10 @@ class Produit {
   }
 
   @override
-<<<<<<< Updated upstream
   bool operator ==(Object other) {
     if (identical(this, other)) return true;
   
     return other is Produit &&
-=======
-  bool operator ==(covariant Produit other) {
-    if (identical(this, other)) return true;
-  
-    return 
->>>>>>> Stashed changes
       other.id == id &&
       other.title == title &&
       other.description == description &&
@@ -148,8 +105,4 @@ class Produit {
       produitCategoryName.hashCode ^
       quantity.hashCode;
   }
-<<<<<<< Updated upstream
  }
-=======
-}
->>>>>>> Stashed changes

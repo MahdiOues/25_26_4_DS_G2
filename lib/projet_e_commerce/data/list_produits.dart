@@ -1,15 +1,8 @@
 
-<<<<<<< Updated upstream
 import 'package:projet/projet_e_commerce/model/class_produit.dart';
 
 class AllProductData {
 
-=======
-
-import 'package:projet/projet_e_commerce/model/class_produit.dart';
-
-class AllProductData {
->>>>>>> Stashed changes
   static List<Produit> _produits = [
     Produit(
       id: 'Samsung1',
@@ -595,7 +588,4 @@ class AllProductData {
     return _produits;
   }
 }
-<<<<<<< Updated upstream
 
-=======
->>>>>>> Stashed changes

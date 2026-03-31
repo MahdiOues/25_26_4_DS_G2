@@ -19,16 +19,10 @@ class _BarreNavigationScreenState extends State<BarreNavigationScreen> {
     HomePage(),
     ProduitListPage(),
     PanierPage(),
-<<<<<<< Updated upstream
     FavoriPage(),
     UserInfoPage(),
   ];
 
-=======
-    FavoritePage(),
-    userInfoPage(),
-  ];
->>>>>>> Stashed changes
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -39,7 +33,6 @@ class _BarreNavigationScreenState extends State<BarreNavigationScreen> {
             selectedIndex = index;
           });
         },
-<<<<<<< Updated upstream
         currentIndex: selectedIndex,
         backgroundColor: Colors.grey,
         showSelectedLabels: true,
@@ -52,32 +45,13 @@ class _BarreNavigationScreenState extends State<BarreNavigationScreen> {
           BottomNavigationBarItem(
             icon: Icon(Icons.list),
             label: "Liste Produits",
-=======
-        //backgroundColor: Colors.grey,
-        currentIndex: selectedIndex,
-        type: BottomNavigationBarType.fixed,
-        selectedLabelStyle: TextStyle(fontSize: 16, color: Colors.blue),
-        selectedItemColor: Colors.blue,
-        unselectedItemColor: Colors.grey,
-        showSelectedLabels: true,
-
-        items: [
-          BottomNavigationBarItem(icon: Icon(Icons.home), label: "Acceuil"),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.list),
-            label: "List Produits",
->>>>>>> Stashed changes
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.shopping_cart),
             label: "Mon Panier",
           ),
           BottomNavigationBarItem(icon: Icon(Icons.favorite), label: "Favoris"),
-<<<<<<< Updated upstream
           BottomNavigationBarItem(icon: Icon(Icons.face), label: "Profil"),
-=======
-          BottomNavigationBarItem(icon: Icon(Icons.face), label: "Mon Profile"),
->>>>>>> Stashed changes
         ],
       ),
       body: mesPages[selectedIndex],
