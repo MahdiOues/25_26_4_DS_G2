@@ -11,10 +11,15 @@ class EcommerceApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+<<<<<<< Updated upstream
     return MaterialApp(
       
       home: BarreNavigationScreen()
     //HomePage()
     );
+=======
+    
+    return MaterialApp(home: BarreNavigationScreen());
+>>>>>>> Stashed changes
   }
 }

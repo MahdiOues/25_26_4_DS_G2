@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+<<<<<<< Updated upstream
 class FavoriPage extends StatefulWidget {
   const FavoriPage({super.key});
 
@@ -8,6 +9,16 @@ class FavoriPage extends StatefulWidget {
 }
 
 class _MyWidgetState extends State<FavoriPage> {
+=======
+class FavoritePage extends StatefulWidget {
+  const FavoritePage({super.key});
+
+  @override
+  State<FavoritePage> createState() => _MyWidgetState();
+}
+
+class _MyWidgetState extends State<FavoritePage> {
+>>>>>>> Stashed changes
   @override
   Widget build(BuildContext context) {
     return Scaffold(
